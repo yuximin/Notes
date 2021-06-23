@@ -43,7 +43,7 @@ NSTimer是系统提供的计时器，在 iOS 开发过程中经常被使用到�
 
 得到信息，**NSTimer 对 target 对象存在强引用，直到 NSTimer 被 invalidate。**
 
-![alt](https://github.com/yuximin/Notes/blob/master/iOS/%E5%9F%BA%E7%A1%80%E7%AF%87/Resources/%E5%85%B3%E4%BA%8ENSTimer%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E9%97%AE%E9%A2%981.png)
+![alt](./Resources/关于NSTimer内存泄漏问题1.png)
 
 这里，我们将 NSTimer 的 target 设置为 self ，即 NSTimer 对当前对象强引用，而 NSTimer 本身又被当前对象的属性强引用。对象的引用关系如上图，这就出现了循环引用问题，导致当前视图无法正确释放，发生内存泄漏。
 
@@ -98,7 +98,7 @@ Runloop 会持有 NSTimer，即对其强引用。
 
 则，正确的引用关系应该如下图所示：
 
-![alt](https://github.com/yuximin/Notes/blob/master/iOS/%E5%9F%BA%E7%A1%80%E7%AF%87/Resources/%E5%85%B3%E4%BA%8ENSTimer%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E9%97%AE%E9%A2%982.png)
+![alt](./Resources/关于NSTimer内存泄漏问题2.png)
 
 所以，就算使用 weak 来修饰 NSTimer 属性，NSTimer 还是不能被释放，因为 NSTimer 被 Runloop 强引用。
 
@@ -195,6 +195,6 @@ Runloop 会持有 NSTimer，即对其强引用。
 
 在实际使用过程中，我们只对 `YJTimer` 对象进行持有和使用，而 `YJTimer` 对象对当前视图是弱引用关系，所以不会影响到当前视图的释放。其引用关系如图：
 
-![alt](https://github.com/yuximin/Notes/blob/master/iOS/%E5%9F%BA%E7%A1%80%E7%AF%87/Resources/%E5%85%B3%E4%BA%8ENSTimer%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E9%97%AE%E9%A2%983.png)
+![alt](./Resources/关于NSTimer内存泄漏问题3.png)
 
 此时，`YJTimer` 对象和其持有的 NSTimer 对象之间同样存在循环引用问题，我们希望在视图销毁时，结束 NSTimer，所以在视图对象的 dealloc方法中，调用 `YJTimer` 提供的 `clearUp` 方法，对 NSTimer 进行销毁，打破循环引用，这样 `YJTimer` 对象也会被释放，问题解决。
