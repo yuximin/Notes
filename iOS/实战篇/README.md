@@ -7,3 +7,5 @@
 [iOS常见尺寸合集](./iOS常见尺寸合集.md)
 
 [Mac OS显示隐藏文件](./macOS显示隐藏文件.md)
+
+[M1芯片环境下pod install报错解决方案](./M1芯片环境下pod install报错解决方案.md)
