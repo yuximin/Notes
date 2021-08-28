@@ -16,3 +16,5 @@
 
 [Runtime系列（一）内存模型](./Runtime系列（一）内存模型.md)
 
+[UI篇-UIResponded事件传递和响应链](./UI篇-UIResponded事件传递和响应链.md)
+
