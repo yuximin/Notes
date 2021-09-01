@@ -1,4 +1,4 @@
-# UI篇-UIResponder事件传递和响应链
+# UIResponder事件传递和响应链
 
 iOS 中常见事件可以分为以下类型：
 
