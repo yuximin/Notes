@@ -18,6 +18,10 @@
 
 [基础篇-block详解](./基础篇-block详解.md)
 
+[基础篇-__block实现原理](./基础篇-__block实现原理.md)
+
+[基础篇-AutoreleasePool原理](./基础篇-AutoreleasePool原理.md)
+
 ## 多线程篇
 
 [多线程篇-GCD](./多线程篇-GCD.md)
