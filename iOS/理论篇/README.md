@@ -22,6 +22,8 @@
 
 [基础篇-AutoreleasePool原理](./基础篇-AutoreleasePool原理.md)
 
+[基础篇-沙盒目录结构及正确使用](./基础篇-沙盒目录结构及正确使用.md)
+
 ## 多线程篇
 
 [多线程篇-GCD](./多线程篇-GCD.md)
