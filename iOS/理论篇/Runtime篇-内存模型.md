@@ -58,6 +58,10 @@ super_class 指针总结：
 * metaclass 的 super_class 指针指向父 metaclass
 * 根 metaclass 的 super_class 指针指向其对应的类
 
+Q：为什么会有 MetaClass 这个设计？
+
+A：这是一种设计理念，复用解决方案。类是对实例的描述，metaclass 就是对类的描述。调用实例方法时，是通过实例的 isa 指针去找到对应的类，在类方法列表中找到需要调用的方法。同样的，调用类方法时，如果类方法存在于类中，则不能采用上面相同的解决方案，所以引入 metaclass 。通过类的 isa 指针，找到对应的 metacalss，在 metaclass 的方法列表中查找需要调用的方法。
+
 ## object
 
 ```objc

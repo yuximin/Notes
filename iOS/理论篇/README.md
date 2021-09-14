@@ -4,7 +4,9 @@
 
 [属性修饰符区别](./属性修饰符.md)
 
-[copy、mutableCopy详解](./copy、mutableCopy详解.md)
+[关于iOS中copy和mutableCopy的理解](./关于iOS中copy和mutableCopy的理解.md)
+
+[copy属性修饰符](./copy属性修饰符.md)
 
 [引用计数及weak的底层实现](./引用计数及weak的底层实现.md)
 
@@ -23,6 +25,8 @@
 [基础篇-AutoreleasePool原理](./基础篇-AutoreleasePool原理.md)
 
 [基础篇-沙盒目录结构及正确使用](./基础篇-沙盒目录结构及正确使用.md)
+
+[基础篇-NSNotification浅析](./基础篇-NSNotification浅析.md)
 
 ## 多线程篇
 
