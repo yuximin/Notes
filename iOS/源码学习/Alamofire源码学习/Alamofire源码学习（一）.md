@@ -21,6 +21,8 @@ DispatchQueue.global().async {
 
 ## Request
 
+对 URLSessionTask 的封装，用于管理 URLSessionTask 的生命周期，并记录 task 的当前状态。
+
 属性
 
 ```swift
