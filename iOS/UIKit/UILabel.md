@@ -26,6 +26,8 @@
 | minimumScaleFactor | CGFloat | 0.0 | 文本字体的最小缩放比例 |
 | allowsDefaultTighteningForTruncation | | 
 
+## 部分属性说明
+
 ### baselineAdjustment
 
 `adjustsFontSizeToFitWidth` 为 `true` 且 `numberOfLines` 为 `1` 时生效
