@@ -212,4 +212,31 @@ case let .failure(message):
 }
 ```
 
+## if case
+
+swift2 之后添加了 if case 判断，具体代码如下：
+
+```swift
+let age = 19
+if case 18...25 = age {
+    // do something
+}
+
+// 在枚举中的应用
+enum Sex {
+    case man(age: Int)
+    case women(age: Int)
+}
+
+let sex: Sex = .man(age: 18)
+if case .man(let age) = sex {
+    print(age) // 18
+}
+
+// 或
+if case let .man(age) = sex {
+    print(age) // 18
+}
+```
+
 
