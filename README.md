@@ -1,6 +1,8 @@
 # Notes
 
-编程学习笔记
+> 编程学习笔记
+>
+> create by @whaley
 
 ## 学习计划
 
