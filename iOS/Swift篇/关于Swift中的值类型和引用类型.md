@@ -128,3 +128,25 @@ p0.name: June
 p1.name: June
 0x000000016d2b7588
 ```
+
+### 引用类型作为函数参数
+
+引用类型作为函数参数时，函数内部对传入的实参进行的修改会同步作用于函数外部的实例本身。
+
+```swift
+let p0 = People(name: "Bob")
+print("Out before:", p0.name)
+func test(_ people: People) {
+    print("In before:", people.name)
+    people.name = "Jack"
+    print("In after:", people.name)
+}
+test(p0)
+print("Out after:", p0.name)
+
+/// 输出
+// Out before: Bob
+// In before: Bob
+// In after: Jack
+// Out after: Jack
+```
