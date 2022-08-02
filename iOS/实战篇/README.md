@@ -10,3 +10,5 @@
 
 [M1芯片环境下pod install报错解决方案](./M1芯片环境下pod-install报错解决方案.md)
 
+[解决iOS15隐私跟踪(UserTracking)不弹授权框](./解决iOS15隐私跟踪(UserTracking)不弹授权框.md)
+
