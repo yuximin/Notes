@@ -28,6 +28,8 @@
 
 [基础篇-NSNotification浅析](./基础篇-NSNotification浅析.md)
 
+[layoutSubviews调用时机](./layoutSubviews调用时机.md)
+
 ## 多线程篇
 
 [多线程篇-GCD](./多线程篇-GCD.md)
