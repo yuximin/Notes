@@ -103,7 +103,7 @@ end
 
 ## 四、验证podspec文件
 
-在本地目录下执行命令 `pod spec lint`，验证成功会看到 `xxx passed validation.`
+在本地目录下执行命令 `pod spec lint --allow-warnings`，验证成功会看到 `xxx passed validation.`
 
 ## 五、发布pod
 
@@ -133,7 +133,7 @@ end
 
 4. 将私有库的podspec文件推送到私有索引库中
 
-`pod repo push yourRepoName yourProjectName.podspec`
+`pod repo push yourRepoName yourProjectName.podspec --allow-warnings`
 
 5. 安装远程库
 
