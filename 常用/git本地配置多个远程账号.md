@@ -35,6 +35,9 @@ ssh-add ~/.ssh/id_rsa_xxx
 
 // 查看所有添加过的文件
 ssh-add -l
+
+// 删除所有添加过的文件
+ssh-add -D
 ```
 
 ## 将公钥添加到远程账号
