@@ -91,4 +91,14 @@ Warning: Permanently added 'github.com,20.205.243.166' (ECDSA) to the list of kn
 Hi yuximin! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
+## 解决ssh-add重启电脑后失效问题
+
+1. 打开系统自带应用【实用工具】中的【自动操作】
+2. 选择菜单中【文件】-【新建】
+3. 文稿类型选择【应用程序】
+4. 在打开的窗口中选择【实用工具】，双击【运行Shell脚本】，填写脚本内容，即 `ssh-add ~/.ssh/id_rsa_xxx`
+5. 选择菜单中【文件】-【导出】，命名为 `SSH.app`，位置选择【应用程序】，点击存储
+6. 打开【系统偏好设置】-【登录项】，点击添加按钮，选择刚才导出的 `SSH.app`
+7. 开机之后就会自动运行 `SSH.app` 添加SSH文件
+
 至此就配置完成啦，可以在本地同时连接多个 git 远程账号啦。
