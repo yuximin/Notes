@@ -61,13 +61,13 @@ vim config
 
 ```
 # 第一个账号
-Host gitlab.weixiangtec.com:8099 // 对应远程仓库中，使用 ssh 方式克隆地址中 git@ 后面紧跟着的域名部分
-HostName gitlab.com
-User git
-IdentityFile ~/.ssh/id_rsa // 添加到远程仓库中的公钥对应的私钥
+Host gitlab // 仓库网站别名，随便取
+HostName gitlab.weixiangtec.com // 仓库网站域名
+User git // 仓库网站上的用户名
+IdentityFile ~/.ssh/id_rsa // 私钥对应的绝对路径
 
 # 第二个账号
-Host github.com
+Host github
 HostName github.com
 User git
 IdentityFile ~/.ssh/id_rsa_github
@@ -76,7 +76,7 @@ IdentityFile ~/.ssh/id_rsa_github
 ## 测试是否联通
 
 ```shell
-ssh -T git@gitlab.weixiangtec.com:8099
+ssh -T git@gitlab.weixiangtec.com
 ssh -T git@github.com
 ```
 
