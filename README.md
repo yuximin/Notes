@@ -30,12 +30,16 @@
 
 [静态库和动态库的区别](./编程基础/静态库和动态库区别.md)
 
+## 环境搭建
+
+[Mac开发环境搭建](./环境搭建/Mac开发环境搭建.md)
+
+[Git本地配置多个远程账号](./环境搭建/Git本地配置多个远程账号.md)
+
+[Python及pip安装](./环境搭建/Python及pip安装.md)
+
+[Gem FilePermissionError](./环境搭建/GemFilePremissionError.md)
+
 ## 常用
 
-[Mac常用配置](./常用/Mac常用配置.md)
-
 [各操作系统tcp连接命令行](./常用/tcp连接命令行.md)
-
-[git本地配置多个远程账号](./常用/git本地配置多个远程账号.md)
-
-[Git多账号配置[新]](./常用/Git多账号配置.md)

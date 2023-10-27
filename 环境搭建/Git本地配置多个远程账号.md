@@ -1,13 +1,13 @@
-# git 本地配置多个远程账号
+# Git 本地配置多个远程账号
 
 ## 设置账号
 
 ```shell
-// 设置全局账号用户名和邮箱
+# 设置全局账号用户名和邮箱
 git config --global user.name 'your username'
 git config --global user.emil 'your email'
 
-// 查看全局配置
+# 查看全局配置
 git config --list
 ```
 
@@ -16,12 +16,12 @@ git config --list
 Mac OS 下，ssh 密钥一般存放在 `~/.ssh` 目录下，名称为 `id_rsa` 。可查看该目录下是否已经存在密钥文件，或者可以直接使用下面的命令生成密钥。
 
 ```shell
-// 生成 ssh 密钥
-// 该指令未指定密钥文件的生成目录，指令执行过程中会提示你确认目标路径，默认存放到 ~/.ssh 目录，你也可以对目标路径进行修改
+# 生成 ssh 密钥
+# 该指令未指定密钥文件的生成目录，指令执行过程中会提示你确认目标路径，默认存放到 ~/.ssh 目录，你也可以对目标路径进行修改
 ssh-keygen -t rsa -C "your email"
 
-// 也可以通过下面指令指定密钥文件的生成目录
-// 想要在本地配置多个账号的话，需要生成跟上面不同名称的密钥
+# 也可以通过下面指令指定密钥文件的生成目录
+# 想要在本地配置多个账号的话，需要生成跟上面不同名称的密钥
 ssh-keygen -t rsa -f ~/.ssh/id_rsa_xxx -C "your email"
 ```
 
@@ -30,13 +30,13 @@ ssh-keygen -t rsa -f ~/.ssh/id_rsa_xxx -C "your email"
 默认 SSH 只会读取 id_rsa，对于新生成的密钥，需要手动添加到 SSH agent。
 
 ```shell
-// 添加密钥文件
+# 添加密钥文件
 ssh-add ~/.ssh/id_rsa_xxx
 
-// 查看所有添加过的文件
+# 查看所有添加过的文件
 ssh-add -l
 
-// 删除所有添加过的文件
+# 删除所有添加过的文件
 ssh-add -D
 ```
 
