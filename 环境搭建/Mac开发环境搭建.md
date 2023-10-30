@@ -32,10 +32,13 @@ brew install ruby
 
 ```shell
 # 设置环境变量
-echo 'export PATH="/opt/homebrew/opt/ruby@3.0/bin:&PATH"' >> ~/.zshrc
+echo 'export PATH="/opt/homebrew/opt/ruby@3.0/bin:$PATH"' >> ~/.zshrc
 
 # 保存设置
 source ~/.zshrc
+
+# 查看环境变量
+echo $PATH
 ```
 
 ## 安装Cocoapods
