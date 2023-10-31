@@ -21,3 +21,5 @@
 [UICollectionViewLayout阿语适配问题](./UICollectionViewLayout阿语适配问题.md)
 
 [iOS制作cocoapods公有库和私有库](./iOS制作cocoapods公有库和私有库.md)
+
+[iOS App四种发布方式的区别](./iOS%20App四种发布方式的区别.md)
