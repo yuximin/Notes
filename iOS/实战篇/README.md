@@ -23,3 +23,5 @@
 [iOS制作cocoapods公有库和私有库](./iOS制作cocoapods公有库和私有库.md)
 
 [iOS App四种发布方式的区别](./iOS%20App四种发布方式的区别.md)
+
+[App转让后apple登录用户信息迁移](./App转让后apple登录用户信息迁移.md)
