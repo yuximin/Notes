@@ -27,3 +27,5 @@
 [App转让后apple登录用户信息迁移](./App转让后apple登录用户信息迁移.md)
 
 [关于如何获取设备唯一标识](./关于如何获取设备唯一标识.md)
+
+[UIModalPresentationStyle理解](./UIModalPresentationStyle理解.md)
