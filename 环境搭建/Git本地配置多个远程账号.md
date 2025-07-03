@@ -5,7 +5,7 @@
 ```shell
 # 设置全局账号用户名和邮箱
 git config --global user.name 'your username'
-git config --global user.emil 'your email'
+git config --global user.email 'your email'
 
 # 查看全局配置
 git config --list
