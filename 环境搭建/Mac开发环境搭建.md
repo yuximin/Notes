@@ -31,7 +31,7 @@ brew install ruby
 2. 配置环境变量（这一步主要是为了让 ruby 指令能找到我们自行安装的 ruby 版本）
 
 ```shell
-# 设置环境变量
+# 设置环境变量，这里ruby@3.0中的版本号应该与实际安装的版本号保持一致，可以在 /opt/homebrew/opt/ 路径下查看具体的版本
 echo 'export PATH="/opt/homebrew/opt/ruby@3.0/bin:$PATH"' >> ~/.zshrc
 
 # 保存设置
@@ -39,6 +39,28 @@ source ~/.zshrc
 
 # 查看环境变量
 echo $PATH
+```
+
+## gem 镜像更换（有梯子可以不用）
+
+```shell
+# 查看所有添加过的源
+gem sources -l
+
+# 移除原来的源
+gem sources --remove https://rubygems.org/
+
+# 添加镜像源（腾讯云镜像，2025.10.10亲测可用）
+gem sources -a https://mirrors.cloud.tencent.com/rubygems/
+
+# 验证是否添加成功
+gem sources -l
+```
+
+## gem 版本更新
+
+```shell
+sudo gem update --system
 ```
 
 ## 安装Cocoapods
